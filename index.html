@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <!--Tailwind css CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper w-full">
+      <main class="h-screen w-full">
+        <nav class="flex justify-between px-8 py-10">
+          <div class="brand">
+            <h1 class="brand md:text-2xl lg:text-3xl text-white">sunnyside</h1>
+          </div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <ul class="flex" id="flex">
+            <li><a href="#" class="mx-5 text-white lg:text-lg">About</a></li>
+            <li><a href="#" class="mx-5 text-white lg:text-lg">Service</a></li>
+            <li>
+              <a href="#" class="mx-5 text-white lg:text-lg">Project</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="contact-btn mx-5 text-black md:text-sm lg:text-base bg-white hover:bg-green-100 py-3 px-6 rounded-full contact"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="hero flex mx-auto w-full justify-center mt-28 text-white">
+          <h1 class="tracking-widest text-2xl lg:text-6xl md:text-5xl">
+            WE ARE CREATIVES
+          </h1>
+        </div>
+        <img
+          class="flex justify-center items-center mx-auto my-20"
+          src="./images/icon-arrow-down.svg"
+          alt=""
+        />
+      </main>
+      <div class="blog">
+        <section class="one grid md:grid-cols-1 lg:grid-cols-2">
+          <div
+            class="article1 mx-12 lg:px-36 md:px-36 py-44 items-center order-last md:order-last lg:order-first"
+          >
+            <h2 class="articleOneText text-3xl lg:text-5xl md:text-5xl mb-10">
+              Transform your brand
+            </h2>
+            <p class="textOne font-bold md:text-base lg:text-base text-xs">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <p class="textOneL mt-12 text-xs md:text-base lg:text-base">
+              <a href="#">LEARN MORE</a>
+            </p>
+            <hr class="lineOne" />
+          </div>
+          <div class="img1">
+            <img
+              src="./images/desktop/image-transform.jpg"
+              class="sm:order-first w-full h-full"
+            />
+          </div>
+        </section>
+        <!--end section one-->
+        <section class="two grid md:grid-cols-1 lg:grid-cols-2">
+          <div class="img2">
+            <img
+              src="./images/desktop/image-stand-out.jpg"
+              class="w-screen lg:w-full md:w-full md:h-full lg:h-full"
+            />
+          </div>
+          <div class="article2 mx-12 lg:px-36 md:px-36 py-44 items-center">
+            <h2 class="articleOneText text-3xl lg:text-5xl md:text-5xl mb-10">
+              Stand out to the right audience
+            </h2>
+            <p
+              class="textOne font-bold grid md:text-base lg:text-base text-xs sm:order-last lg:order-1"
+            >
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <p class="textOneL mt-12 text-xs md:text-base lg:text-base">
+              <a href="#">LEARN MORE</a>
+            </p>
+            <hr class="lineOne" />
+          </div>
+        </section>
+        <!--end of section two-->
+        <div class="blog-aside">
+          <div class="blog-images grid md:grid-cols-2">
+            <div class="img-1">
+              <img
+                src="./images/desktop/image-graphic-design.jpg"
+                class="w-full h-full"
+                alt="cherry img"
+              />
+              <!-- <h2 class="lg:text-3xl img__1__head__text">Graphic design</h2>
+              <p class="img__1__text md:text-sm lg:text-base">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p> -->
+            </div>
+            <div class="img-2">
+              <img
+                src="./images/desktop/image-photography.jpg"
+                class="w-full h-full"
+                alt="orange"
+              />
+              <!-- <h2 class="lg:text-3xl img__2__head__text">Photography</h2>
+              <p class="img__2__text md:text-sm lg:text-base">
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <!--Testimonials section-->
+        <div class="testimonials">
+          <div class="testi-text">
+            <h3
+              class="lg:text-2xl md:text-2xl tracking-widest flex justify-center my-36"
+            >
+              CLIENT TESTIMONIALS
+            </h3>
+          </div>
+          <div
+            class="persons flex flex-col lg:flex-row md:flex-row items-center text-center self-center md:mx-10 lg:mx-56 my-24"
+          >
+            <div
+              class="person1 lg:mr-12 md:mr-12 mx-auto w-full my-12 lg:my-auto md:my-auto"
+            >
+              <img
+                src="./images/image-emily.jpg"
+                alt="emily"
+                class="rounded-full w-20 mx-auto mb-12"
+              />
+              <div class="person1Content">
+                <p>
+                  We put our trust in Sunnyside and they delivered, making sure
+                  our needs were met and deadlines were always hit.
+                </p>
+              </div>
+              <div class="person1Bio">
+                <h2 class="mt-12">Emily R.</h2>
+                <p class="text-sm text-red-500">Marketing Director</p>
+              </div>
+            </div>
+            <!--Person 2 --------------------------------------------------------------->
+            <div
+              class="person2 lg:mr-12 md:mr-12 mx-auto w-full my-12 lg:my-auto md:my-auto"
+            >
+              <img
+                src="./images/image-thomas.jpg"
+                alt="thomas"
+                class="rounded-full w-20 mx-auto mb-12"
+              />
+              <div class="person2Content">
+                <p>
+                  Sunnyside’s enthusiasm coupled with their keen interest in our
+                  brand’s success made it a satisfying and enjoyable experience.
+                </p>
+              </div>
+              <div class="person2Bio">
+                <h2 class="mt-12">Thomas S.</h2>
+                <p class="text-sm text-red-500">Chief Operating Officer</p>
+              </div>
+            </div>
+            <!--Person 3---------------------------------------------------------------->
+            <div
+              class="person3 lg:mr-12 md:mr-12 mx-auto w-full my-12 lg:my-auto md:my-auto"
+            >
+              <img
+                src="./images/image-jennie.jpg"
+                alt="jennie"
+                class="rounded-full w-20 mx-auto mb-12"
+              />
+              <div class="person3Content">
+                <p>
+                  Incredible end result! Our sales increased over 400% when we
+                  worked with Sunnyside. Highly recommended!
+                </p>
+              </div>
+              <div class="person3Bio">
+                <h2 class="mt-12">Jennie F.</h2>
+                <p class="text-sm smallP">Business Owner About Services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of testimonials-->
+        <div class="image-section flex justify-center mx-auto w-full flex-wrap">
+          <img
+            src="./images/desktop/image-gallery-milkbottles.jpg"
+            class="w-1/4"
+          />
+          <img
+            src="./images/desktop/image-gallery-orange.jpg"
+            alt="orange"
+            class="w-1/4"
+          />
+          <img
+            src="./images/desktop/image-gallery-cone.jpg"
+            alt=""
+            class="w-1/4"
+          />
+          <img
+            src="./images/desktop/image-gallery-sugarcubes.jpg"
+            alt=""
+            class="w-1/4"
+          />
+        </div>
+      </div>
+    </div>
+    <footer class="h-80">
+      <h1 class="brand text-center text-4xl pt-14">sunnyside</h1>
+      <div class="navbars-footer text-center my-12">
+        <a href="#" class="md:mx-8 md:text-xl font-bold hover:text-red"
+          >About</a
+        >
+        <a href="#" class="mx-4 md:mx-8 md:text-xl font-bold hover:text-red"
+          >Service</a
+        >
+        <a href="#" class="md:mx-8 md:text-xl font-bold hover:text-red"
+          >Project</a
+        >
+      </div>
+      <div class="icon flex flex-wrap justify-center">
+        <img
+          class="mx-4 hover:text-sky"
+          src="./images/icon-facebook.svg"
+          alt=""
+        />
+        <img
+          class="mx-4 hover:text-sky"
+          src="./images/icon-instagram.svg"
+          alt=""
+        />
+        <img
+          class="mx-4 hover:text-sky"
+          src="./images/icon-twitter.svg"
+          alt=""
+        />
+        <img
+          class="mx-4 hover:text-sky"
+          src="./images/icon-pinterest.svg"
+          alt=""
+        />
+      </div>
+      <div class="attribution mx-12 my-12 my-12">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Waris Alokozay</a>.
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

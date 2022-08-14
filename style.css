@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&@900&display=swap");
+/* font-family: 'Barlow', sans-serif; */
+/* font-family: 'Fraunces', serif; */
+
+.brand {
+  font-family: "Barlow" sans-serif;
+  font-weight: 900;
+}
+
+main {
+  background-image: url(lewis-fagg-24RUrLSW1HI-unsplash.jpg);
+  height: 100vh;
+  background: cover;
+  width: 100%;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+/* contact btn navbar */
+.contact {
+  font-family: "Fraunces", serif;
+}
+
+/* hero section */
+.hero {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+/* End hero section */
+
+/* Start main section */
+.articleOneText {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+  max-width: 80%;
+}
+
+.textOne {
+  color: hsl(232, 10%, 55%);
+  max-width: 93%;
+}
+
+.textOneL {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+  max-width: 8em;
+}
+.lineOne {
+  border: 0;
+  height: 0; /* Firefox... */
+  box-shadow: 0 0 10px 8px rgb(255, 213, 0);
+  width: 8em;
+}
+
+.blog-aside {
+  position: relative;
+}
+.img__1__head__text {
+  position: absolute;
+  top: 60%;
+  left: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.img__1__text {
+  position: absolute;
+  top: 70%;
+  left: 11%;
+  max-width: 30%;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow" sans-serif;
+}
+
+.img__2__head__text {
+  position: absolute;
+  top: 60%;
+  right: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.img__2__text {
+  position: absolute;
+  top: 70%;
+  right: 11%;
+  max-width: 28%;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow" sans-serif;
+}
+
+.testi-text h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(210, 4%, 67%);
+}
+
+.person1 p,
+.person2 p,
+.person3 p {
+  font-family: "Barlow" sans-serif;
+  font-weight: 700;
+  color: hsl(213, 9%, 39%);
+}
+.person1 h2,
+.person2 h2,
+.person3 h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(167, 40%, 24%);
+}
+.icon img:hover {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    brightness(50%) contrast(119%);
+}
+footer {
+  background-color: hsl(168, 48%, 57%);
+}
+footer h1 {
+  color: hsl(168, 77%, 24%);
+}
+footer a {
+  color: hsl(167, 52%, 36%);
+}
+
+/* burger menu */
+@media (max-width: 426px) {
+  .toggle-button {
+    display: flex;
+  }
+  #flex {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+  #flex.active {
+    display: flex;
+  }
+
+  main {
+    min-width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    font-size: smal;
+  }
+  .contact-btn {
+    font-size: 8pt;
+  }
+}
